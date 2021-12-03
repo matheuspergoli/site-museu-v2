@@ -1,0 +1,235 @@
+@charset "UTF-8";
+
+@media (max-width: 700px) {
+    main {
+        flex-direction: column;
+    }
+    
+    header {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    header nav {
+        margin-top: 40px;
+    }
+
+    header div#img-logo {
+        margin-top: 15px;
+    }
+
+    header nav#menu-topo a {
+        margin: 5px;
+    }
+    
+    div#img-museu {
+        display: none;
+    }
+
+    article > div#principal h4 {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    article  div#principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article section#section-1, section#section-2 {
+        margin: 10px;
+    }
+
+    aside  div#img-depoimento {
+        display: block;
+        margin: auto;
+    }
+
+}
+
+/* Responsividade */
+
+
+
+
+
+body {
+    background: #f4f2ec url(imagens/fundo.png) repeat-x top;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0px auto;
+    padding: 0px;
+    max-width: 1180px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+}
+
+nav#menu-topo a {
+    color: rgba(243, 86, 86, 0.596);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-left: 15px;
+}
+
+nav#menu-topo a:hover {
+    color: #227115;
+    border-bottom: 1px solid burlywood;
+    padding-bottom: 5px;
+}
+
+div#img-logo a {
+    display: block;
+    background: url(imagens/logo.png) no-repeat;
+    color: transparent;
+    height: 25px;
+    width: 250px;
+}
+
+/* Topo */
+
+
+
+
+
+div#principal {
+    display: flex;
+}
+
+article h4 {
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #227115;
+}
+
+#section-1 {
+    margin-right: 65px;
+}
+
+section > #expo-lista li a {
+    text-decoration: none;
+    color: rgb(230, 155, 59);
+}
+
+section > #expo-lista a{
+    font-size: 13px;
+}
+
+section > #expo-lista li:nth-of-type(7) {
+    font-weight: bold;
+}
+
+section > #expo-lista li a:hover {
+    color: #227115;
+}
+
+section#section-1 h4:nth-of-type(2) {
+    margin-bottom: 25px;
+}
+
+div#img-museu {
+    background: url(imagens/museu.png) no-repeat;
+    height: 320px;
+    width: 710px;
+}
+
+/* Primeira section */
+
+
+
+
+
+div#principal > #section-2 {
+    width: 310px;
+}
+
+div#principal > #section-2 p {
+    text-align: left;
+    font-size: 14px;
+}
+
+div#principal > #section-2 a {
+    text-decoration: underline;
+    color: burlywood;
+    font-weight: bold;
+}
+
+/* Segunda section */
+
+
+
+
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+aside {
+    background-color: #ebe7dd;
+}
+
+aside div#formulario h4 {
+    color: #86521a;
+    margin-left: 15px;
+}
+
+aside > div#img-depoimento {
+    background: url(imagens/depoimento.png) no-repeat;
+    width: 350px;
+    height: 320px;
+    margin-bottom: 15px;
+}
+
+div#formulario {
+    padding: 15px;
+    background-color: #cdc8b1;
+}
+
+div#formulario fieldset {
+    border: none;
+}
+
+div#formulario legend {
+    font-size: 13px;
+}
+
+div#formulario > #botao {
+    display: block;
+    margin: 0px auto;
+    border: none;
+    background-color:  #9b9271;
+    color: white;
+    letter-spacing: 0.05em;
+    font-size: 18px;
+    height: 40px;
+    width: 300px;
+}
+
+div#formulario  > fieldset label:nth-of-type(1) {
+    font-size: 12px;
+}
+
+div#formulario  > fieldset label:nth-of-type(2) {
+    font-size: 12px;
+}
+
+div#formulario  > fieldset input:nth-of-type(1) {
+    width: 75px;
+    border: none;
+}
+
+div#formulario > fieldset input:nth-of-type(2) {
+    width: 25px;
+    border: none;
+}
+
+/* Formulário */
